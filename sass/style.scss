@@ -1,0 +1,152 @@
+.body{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    clip-path: polygon(57% 22%, 86% 17%, 100% 35%, 100% 70%, 88% 89%, 50% 100%, 15% 90%, 0% 70%, 0% 35%, 28% 28%);
+    position: absolute;
+    top: 400px;
+    left: 700px;
+    animation-name: hereket1;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+
+}
+
+@keyframes hereket1 {
+     from{
+        top: 0;
+     }
+     to{
+        top: 400px;
+     }
+}
+
+.head{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    clip-path: circle(50% at 50% 50%);
+    position: absolute;
+    top: 377px;
+    left: 823px;
+    animation: hereket2 3s infinite;
+  
+
+    .eyeball{
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        clip-path: circle(50% at 50% 50%);
+        position: absolute;
+        top: 20px;
+        left: 40px;
+
+        .eye{
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            clip-path: circle(50% at 50% 50%);
+            position: absolute;
+            top: 8px;
+            left: 15px;
+        }
+    }
+
+}
+
+@keyframes hereket2{
+    from{
+        top: -1000px;
+        left: 823px;
+    }
+    to{
+        top: 377px;
+        left: 823px;
+    }
+}
+
+.wing1{
+    width: 129px;
+    height: 100px;
+    background-color: grey;
+    clip-path: polygon(46% 43%, 75% 43%, 100% 43%, 100% 83%, 69% 98%, 29% 98%, 0 86%, 0% 43%, 20% 43%);
+    position: absolute;
+    top: 413px;
+    left: 700px;
+    transform: rotate(347deg);
+    animation: hereket3 3s infinite;
+}
+
+@keyframes hereket3{
+    from{
+        left: 0;
+    }
+    to{
+        left: 700px;
+    }
+}
+
+.wing2{
+    width: 90px;
+    height: 50px;
+    background-color: black;
+    clip-path: polygon(47% 60%, 100% 28%, 100% 100%, 0 88%);
+    position: absolute;
+    top: 454px;
+    left: 616px;
+    animation: hereket4 3s infinite;
+
+}
+
+@keyframes hereket4{
+    from{
+        left: 20px;
+    }
+    to{
+        left: 616px;
+    }
+}
+
+.beak{
+    width: 60px;
+    height: 100px;
+    background-color: orange;
+    clip-path: polygon(0 76%, 0% 100%, 98% 73%);
+    position: absolute;
+    top: 339px;
+    left: 923px;
+    animation: hereket5 3s infinite;
+}
+
+@keyframes hereket5{
+    from{
+        top: 0;
+        left: 0;
+    }
+    to{
+        top: 339px;
+        left: 923px;
+    }
+}
+
+.foot{
+    width: 75px;
+    height: 61px;
+    background-color: skyblue;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 88% 100%, 62% 45%, 84% 0);
+    position: absolute;
+    top: 599px;
+    left: 731px;
+    animation: hereket6 3s infinite;
+}
+
+@keyframes hereket6{
+    from{
+        top: -100;
+        left: 0;
+    }
+    to{
+        top: 599px;
+        left: 731px;
+    }
+}
